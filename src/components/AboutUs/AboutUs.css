@@ -1,0 +1,59 @@
+.aboutUs__container {
+    margin: 4rem 0 0 0;
+}
+.aboutUs__title {
+    color: var(--very-dark-blue);
+    margin-bottom: 2rem;
+}
+.aboutUs__info {
+    font-family: var(--ff-main);
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.aboutUs__banner {
+    position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgb(17 16 19 / 51%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutUs__banner-title {
+    font-size: calc(1rem + 3vw);
+    color: var(--very-light-grey);
+    font-family: var(--ff-main);
+
+}
+.aboutUs__banner-button {
+    padding: 20px 20px;
+    font-family: var(--ff-main);
+    background: var(--very-dark-blue);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1.2em;
+}
+.aboutUs__banner-button img {
+    filter: invert(100%);
+    padding: 0 0 0 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutUs__title {
+        font-size: 2rem;
+    }  
+    .aboutUs__info {
+        line-height: 1.8;
+    }  
+    .aboutUs__banner {
+        height: 500px;
+        background-image: url('../../assets/home/mobile/image-small-team.jpg');
+    }
+    .aboutUs__banner-title {
+        width: 60%;
+        margin-top: 2em;
+    }
+}

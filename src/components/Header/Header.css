@@ -1,0 +1,70 @@
+.header__container {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgb(17 16 19 / 51%);
+    box-sizing: border-box;
+}
+.header__content {
+    padding: 1.5em;
+}
+.header__title {
+    color: var(--very-light-grey);
+    font-family: var(--ff-main);
+    width: 60%;
+    /* line-height: var(--line-height); */
+    padding: 0;
+    margin: 0;
+}
+.header__info {
+    color: var(--very-light-grey);
+    font-family: var(--ff-main);
+}
+.header__button {
+    padding: 20px 30px;
+    background-color: var(--very-dark-blue);
+    color: rgba(255, 255, 255, 1);
+    font-family: var(--ff-main);
+    font-size: 1rem;
+    border: 0;
+}
+.header__icon-container {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .header__container {
+        background-image: url('../../assets/home/mobile/image-hero-paramour.jpg');
+    }
+    .header__title {
+        font-size: 1.5rem;
+    }
+    .header__title:nth-child(1) {
+        margin: 1em 0 0 0;
+    }
+    .header__info {
+        font-size: .9rem;
+        line-height: 1.6;
+    }
+    .header__icon-container {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 80%;
+        z-index: 3;
+        justify-content: space-between;
+        padding: 0 3em;
+    }
+    .arrow__container {
+        padding: 10px;
+        border-radius: 40px;
+        background: rgba(0, 0, 0, 0.349);
+    }
+    .arrow {
+        color: white;
+        padding: 0;
+    }
+    
+
+}
