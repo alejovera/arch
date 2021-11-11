@@ -34,17 +34,6 @@
     font-family: var(--ff-main);
     margin-top: 0;
 }
-.leaders__name {
-    font-family: var(--ff-main);
-    font-weight: bold;
-    margin: 0;
-}
-.leaders__title {
-    margin: 0 0 10px 0;
-}
-.leaders__card i {
-    padding: 0 1em 0 0;
-}
 @media screen and (min-width: 950px) {
     .heritage__right {
         width: 100%;
@@ -58,10 +47,27 @@
         margin-right: 3rem;
     }
 }
+@media screen and (max-width: 950px) {
+    .leaders__container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .leaders__right {
+        width: min-content;
+        margin-right: 6rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    .leaders__container {
+        width: 80%;
+        margin: 3rem auto 0;
+    }
+}
 @media screen and (max-width: 600px) {
     .leaders__right {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+        place-items: center;
     }
 }
 

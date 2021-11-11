@@ -5,16 +5,16 @@ import blackArrow from '../../assets/black__arrow.png'
 
 function ContactDetails({office, mail, phone, adress}) {
     return (
-        <div class="contact__details--list main">
-            <div class="contact__details--text">
-                <p class="location">{office}</p>
-                <p class="mail">Mail: {mail}</p>
-                <p class="address">Address: {adress}</p>
-                <p class="phone">Phone: {phone}</p>
+        <div className="contact__details--list main">
+            <div className="contact__details--text">
+                <p className="location">{office}</p>
+                <p className="mail">Mail: {mail}</p>
+                <p className="address">Address: {adress}</p>
+                <p className="phone">Phone: {phone}</p>
             </div>
-            <div class="view__container">
-                <span class="view">View on Map</span>
-                <span class="arrow__black">
+            <div className="view__container">
+                <span className="view">View on Map</span>
+                <span className="arrow__black">
                     <img src={blackArrow} alt=""/>
                 </span>
             </div>

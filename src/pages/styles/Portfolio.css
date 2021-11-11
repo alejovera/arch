@@ -2,11 +2,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin: 3rem auto 7rem;
+    margin: 1rem auto 7rem;
     width: 80%;
 }
 @media screen and (max-width: 950px) {
     .portfolio__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        margin: 0;
+        width: 100%;
     }
 }

@@ -3,8 +3,11 @@
     height: 15vh;
     display: flex;
     align-items: center;
-    padding: 1.5em 2em;
+    padding: 20px;
     box-sizing: border-box;
+}
+.navbar__links {
+    text-decoration: none;
 }
 .navbar__wrapper label {
     display: none;

@@ -1,8 +1,16 @@
+.projects__card-container {
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+    height: 500px;
+}
 .projects__nav {
+    width: 80%;
+    margin: 6rem auto 0;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
-    margin-top: 6rem;
+    align-items: center;
 }
 .projects__title {
     font-family: var(--ff-main);
@@ -20,6 +28,12 @@
     filter: invert(100%);
     padding: 0 0 0 1em;
 }
-.projects__card-container {
-    width: 100%;
+@media screen and (max-width: 950px) {
+    .projects__card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
 }

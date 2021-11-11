@@ -5,9 +5,12 @@ import './styles/Contact.css'
 import { ContactDetails } from '../components/ContactDetails/ContactDetails'
 
 import whiteArrow from '../assets/white__arrow.png'
+import { Navbar } from '../components/Navbar/Navbar'
+import { Footer } from '../components/Footer/Footer'
 function Contact() {
     return (
         <>
+            <Navbar />
             <SectionsHero section="Contact" title="Tell us about your project"
                 info="We’d love to hear more about your project. Please, leave a
                 message below or give us a call. We have two offices, one in
@@ -45,11 +48,9 @@ function Contact() {
                 <form action="#" id="connect__form">
                 <div className="form__input">
                     <input type="text" placeholder="Name" id="Name" />
-                    <p className="form__error name">Can't be empty</p>
                 </div>
                 <div className="form__input">
                     <input type="email" placeholder="Email" id="email" />
-                    <p className="form__error email">Can't be empty</p>
                 </div>
                 <div className="form__input">
                     <textarea
@@ -59,7 +60,6 @@ function Contact() {
                     cols="30"
                     rows="10"
                     ></textarea>
-                    <p className="form__error message">Can't be empty</p>
                 </div>
                 <div className="button__container">
                     <button type="submit" className="form__button">
@@ -73,6 +73,7 @@ function Contact() {
                 </form>
             </div>
             </section>
+            <Footer />
         </>
     )
 }
