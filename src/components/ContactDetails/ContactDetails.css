@@ -1,0 +1,34 @@
+.contact__details--list {
+    line-height: 1.9;
+}
+.location {
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+.view__container {
+    display: flex;
+    align-items: center;
+}
+.view {
+    font-weight: bold;
+    font-family: var(--ff-main);
+}
+.arrow__black {
+    margin-left: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.contact__details--text > p {
+    font-family: var(--ff-main);
+}
+@media screen and (max-width: 600px) {
+    .contact__details--list {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 950px) {
+    .contact__details--list {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,9 +1,19 @@
 .aboutUs__container {
-    margin: 4rem 0 0 0;
+    width: 80%;
+    margin: 20rem auto;
 }
 .aboutUs__title {
     color: var(--very-dark-blue);
     margin-bottom: 2rem;
+    font-size: 4rem;
+    font-family: var(--ff-main);
+}
+.aboutUs__large-title {
+    font-size: 10rem;
+    position: absolute;
+    top: 38rem;
+    left: 5rem;
+    color: var(--light-grey);
 }
 .aboutUs__info {
     font-family: var(--ff-main);
@@ -11,6 +21,7 @@
     padding: 0;
     margin-block-start: 1em;
     margin-block-end: 1em;
+    line-height: var(--line-height);
 }
 .aboutUs__banner {
     position: center;
@@ -21,6 +32,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 700px;
+    padding: 50px;
+
 }
 .aboutUs__banner-title {
     font-size: calc(1rem + 3vw);
@@ -40,7 +54,19 @@
     filter: invert(100%);
     padding: 0 0 0 1em;
 }
-
+@media screen and (min-width: 600px) {
+    .aboutUs__banner {
+        background-image: url('../../assets/home/desktop/image-small-team.jpg');
+    }
+    .aboutUs__banner-title {
+        width: 50%;
+        align-self: flex-start;
+        margin-bottom: 0.5em;
+    }
+    .aboutUs__banner-button {
+        align-self: flex-start;
+    }
+}
 @media screen and (max-width: 600px) {
     .aboutUs__title {
         font-size: 2rem;

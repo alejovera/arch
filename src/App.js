@@ -1,19 +1,22 @@
 import React from 'react'
-import {Navbar} from './components/Navbar/Navbar';
-import {Header} from './components/Header/Header';
-import {AboutUs} from './components/AboutUs/AboutUs';
-import {Projects} from './components/Projects/Projects';
-import {Footer} from './components/Footer/Footer';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <React.Fragment>
-      <Navbar />
-      <Header />
-      <AboutUs />
-      <Projects />
-      <Footer />
-    </React.Fragment>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/portfolio' component={Portfolio} />
+          <Route path='/aboutus' component={AboutUs} />
+          <Route path='/contact' component={Contact} />
+        </Switch>
+      </Router>
+    </>
   )
 }
 

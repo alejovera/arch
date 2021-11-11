@@ -17,9 +17,9 @@ function Projects() {
             </div>
             <div className="projects__card-container"
             >
-                <Card title="Project Del Sol" img='../../assets/portfolio/desktop/image-del-sol.jpg' />
-                <Card title="228B Tower" />
-                <Card title="La Prototype" />
+                <Card title="Project Del Sol" detail="View All Projects" img='../../assets/portfolio/desktop/image-del-sol.jpg' />
+                <Card title="228B Tower" detail="View All Projects" />
+                <Card title="La Prototype" detail="View All Projects" />
             </div>
             
         </>

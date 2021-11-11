@@ -1,0 +1,98 @@
+.heritage__divider {
+    width: 5rem;
+    height: 1px;
+    background: var(--very-dark-blue);
+    margin-bottom: 3rem;
+}
+.contact__details {
+    width: 80%;
+    margin: 6rem auto 0;
+}
+.contact__details--container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact__details--left--title {
+    font-size: calc(1rem + 2vw);
+    line-height: 1;
+    font-weight: bold;
+    font-family: var(--ff-main);
+}
+.contact__map {
+    background-image: url('../../assets/contact/desktop/image-map.png');
+    margin: 6rem auto 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 80%;
+
+}
+.contact__form {
+    display: flex;
+    width: 80%;
+    margin: 6rem auto 6rem;
+}
+.contact__form--headline {
+    margin-right: 4rem;
+    font-size: calc(1rem + 2vw);
+    font-family: var(--ff-main);
+    font-weight: bold;
+    margin-top: 0;
+}
+.form__container {
+    width: 100%;
+}
+.form__input {
+    position: relative;
+}
+.form__input > input, .form__input > textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    color: var(--dark-grey);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    position: relative;
+}
+.form__error {
+    display: none;
+}
+.button__container {
+    display: flex;
+    justify-content: flex-end;
+}
+.form__button {
+    padding: 20px;
+    width: 100px;
+    background-color: var(--very-dark-blue);
+    align-self: flex-end;
+    cursor: pointer;
+}
+@media screen and (max-width: 950px) {
+    .contact__details--container {
+        flex-direction: column;
+    }
+    .contact__map {
+        background-image: url('../../assets/contact/tablet/image-map.png');
+    }
+}
+@media screen and (max-width: 600px) {
+    .contact__map {
+        background-image: url('../../assets/contact/mobile/image-map.png');
+        background-size: contain;
+        height: 310px;
+        width: 100%;
+    }
+    .contact__form {
+        flex-direction: column;
+    }
+}

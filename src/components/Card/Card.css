@@ -4,28 +4,38 @@
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 1000px rgb(17 16 19 / 49%);
-    margin: 2em 0;
-    /* position: relative; */
+    margin: 1em 0;
+    height: 500px;
+}
+.card__number {
+    display: none;
 }
 .card__text {
     position: relative;
-    top: 400px;
+    top: 420px;
     z-index: 4;
     color: var(--very-light-grey);
     font-family: var(--ff-main);
     font-size: 1rem;
     font-weight: bold;
     margin-left: 1em;
-    /* margin-bottom: 2em; */
     box-sizing: border-box;
+}
+.card__text h3{
+    margin: 0;
 }
 .card__parag {
     font-weight: normal;
+    margin: 0;
+}
+@media screen and (min-width: 950px) {
+    .card {
+        min-height: 500px;
+    }
 }
 @media screen and (max-width: 600px) {
     .card {
         width: 100%;
-        height: 500px;
     }
     .card__number {
         display: none;
